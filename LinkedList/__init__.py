@@ -27,6 +27,10 @@ def create_list(data:list):
     return root
 
 def join_list(l1:Node, l2:Node):
+    if l1 is None:
+        return l2
+    if l2 is None:
+        return l1
     ptr = l1
     while ptr.next:
         ptr = ptr.next
